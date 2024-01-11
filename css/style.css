@@ -18,7 +18,10 @@ main {
 }
 
 .btn {
+    width: fit-content;
+
     padding: 10px 40px;
+
     border: white 1px solid;
     border-radius: 20px;
 }
@@ -45,7 +48,7 @@ nav {
 
 
 
-/* Front page */
+/******* FRONT PAGE *******/
 
 #front {
     flex-grow: 1;
@@ -54,56 +57,81 @@ nav {
     background-color: #141922;
 }
 
-#front .upgrade {
+/* upgrade */
+.upgrade {
+    display: flex;
+    width: calc(100% - 230px);
+
     height: 90px;
 
     position: fixed;
     right: 0;
 
+    justify-content: flex-end;
+    align-items: center;
+
+
     padding: 20px;
+
+    background-color: lightgrey;
 }
 
 .upgrade .btn a {
     font-weight: bold;
     color: white;
 }
+/* fine upgrade */
+
 
 .front-box {
-    height: 100%;
-    /* test */
-    padding-top: 90px;
+    padding: 90px 20px;
 }
 
+
+/* lista */
 .front-box .list-front ul{
     display: flex;
     justify-content: center;
 
     gap: 25px;
+
+    padding-block: 20px;
 }
 
-.front-box ul a {
+.front-box .list-front ul a {
     font-weight: bold;
     color: #7d7f84;
+}
+/* lista */
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    padding-block: 20px;
+
 }
 
 .cards {
     display: flex;
-    justify-content: space-between;
-
-
+    gap: 15px;
 }
 
 .card {
+    width: calc(100% / 6);
     text-align: center;
+    justify-content: center;
 }
 
 .card .card-img {
-    width: 177px;
+    /* width: 177px; */
     height: 177px;
+
     background-color: grey;
     /* test */
 }
-/* Fine front page */
+/************ FINE FRONT PAGE ********/
 
 
 
