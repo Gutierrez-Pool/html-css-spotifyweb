@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+}
+
+.btn {
+    padding: 10px 40px;
+    border: white 1px solid;
+    border-radius: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Navbar */
+
+nav {
+    width: 230px;
+    background-color: black;
+    color: white;
+}
+
+/* Fine navbar */
+
+
+
+/* Front page */
+
+#front {
+    flex-grow: 1;
+
+    color: white;
+    background-color: #141922;
+}
+
+#front .upgrade {
+    height: 90px;
+
+    position: fixed;
+    right: 0;
+
+    padding: 20px;
+}
+
+.upgrade .btn a {
+    font-weight: bold;
+    color: white;
+}
+
+.front-box {
+    height: 100%;
+    /* test */
+    padding-top: 90px;
+}
+
+.front-box .list-front ul{
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.front-box ul a {
+    font-weight: bold;
+    color: #7d7f84;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.card {
+    text-align: center;
+}
+
+.card .card-img {
+    width: 177px;
+    height: 177px;
+    background-color: grey;
+    /* test */
+}
+/* Fine front page */
+
+
+
+/* Player */
+
+footer {
+    height: 90px;
+    color: white;
+    /* test */
+
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+
+    background-color: #282828;
+}
+
+/* Fine player */
