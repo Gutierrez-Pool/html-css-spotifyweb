@@ -40,10 +40,10 @@ a {
 
 nav {
     width: 230px;
+
     background-color: black;
     color: white;
 }
-
 /* Fine navbar */
 
 
@@ -104,6 +104,7 @@ nav {
 }
 /* lista */
 
+
 .column {
     display: flex;
     flex-direction: column;
@@ -113,8 +114,11 @@ nav {
 
 }
 
-.cards {
+#cards {
+    flex-wrap: wrap;
+    /* test */
     display: flex;
+
     gap: 15px;
 }
 
@@ -125,9 +129,9 @@ nav {
 }
 
 .card .card-img {
-    /* width: 177px; */
+    min-width: 177px;
     height: 177px;
-
+    
     background-color: grey;
     /* test */
 }
@@ -151,3 +155,25 @@ footer {
 }
 
 /* Fine player */
+
+
+
+/************************************************
+        MEDIA QUERY
+**************************************************/
+
+@media screen and (max-width: 992px) {
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+
+
+@media screen and (max-width: 576px) {
+    
+}
