@@ -73,7 +73,8 @@ nav {
 
     padding: 20px;
 
-    background-color: lightgrey;
+    background-color: #080b12;
+    opacity: 0.8;
 }
 
 .upgrade .btn a {
@@ -91,6 +92,7 @@ nav {
 /* lista */
 .front-box .list-front ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     gap: 25px;
@@ -111,7 +113,10 @@ nav {
 
     gap: 30px;
     padding-block: 20px;
+}
 
+.column h2 {
+    padding-bottom: 13px;
 }
 
 #cards {
@@ -123,17 +128,32 @@ nav {
 }
 
 .card {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 15px);
+    max-width: 200px;
+    min-width: 177px;
+
     text-align: center;
     justify-content: center;
 }
 
+.card .card-title {
+    padding: 20px 0 10px;
+
+    font-weight: bold;
+}
+
 .card .card-img {
-    min-width: 177px;
     height: 177px;
-    
-    background-color: grey;
-    /* test */
+}
+
+.card .card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.artisti .card-img img {
+    max-width: 177px;
+    border-radius: 50%;
 }
 /************ FINE FRONT PAGE ********/
 
@@ -162,18 +182,31 @@ footer {
         MEDIA QUERY
 **************************************************/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 878px) {
 
 }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
     
 }
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 552px) {
     
 }
+
+
+
+
+
+
+/* 
+Small		≥576px
+Medium		≥768px
+Large		≥992px
+Extra large	≥1200px
+XXL			≥1400px
+*/
