@@ -8,151 +8,227 @@
     <title>Spotify</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
-    <main>
-        <nav>
-            <div>
-                <div>
-                    logo
-                </div>
+    <div id="explorer">
 
-                <div>
-                    home
+        <aside>
+            <div id="large">
+                <div class="sidebar-top">
+                        <div>
+                            <img id="logo" src="img/logo.svg" alt="">
+                        </div>
+        
+                        <div class="tasti">
+                            <div>
+                                <img src="img/home.svg" alt="">
+                                Home
+                            </div>
+            
+                            <div>
+                                <img src="img/search.svg" alt=""> Cerca
+                            </div>
+            
+                            <div>
+                                <img src="img/libreria.svg" alt="">
+                                La tua libreria
+                            </div>
+                        </div>
+        
+                        <div class="playlist">
+                            <div>
+                                <strong>PLAYLIST</strong>
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-square-plus" style="font-size: 38px;"></i>
+                                    Crea Playlist
+                                </li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
                 </div>
-
-                <div>
-                    playlist
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <div class="sidebar-bottom">
+                        <div class="installa">
+                            <img src="img/download.svg" alt="">
+                            Installa app
+                        </div>
+                        <hr>
+                        <div class="profile">
+                            <img src="img/profile.svg" alt="" style="background-color: #808080; border-radius: 50%;">
+                            <strong>John Doe</strong>
+                        </div>
                 </div>
             </div>
-            side bar
-        </nav>
 
-        <section id="front">
+            <div id="mobile">
+                <div class="sidebar-top">
+                    <div>
+                        <img id="logo" src="img/logo-small.svg" alt="">
+                    </div>
+    
+                    <div class="tasti">
+                        <div>
+                            <img src="img/home.svg" alt="">
+                        </div>
+        
+                        <div>
+                            <img src="img/search.svg" alt="">
+                        </div>
+        
+                        <div>
+                            <img src="img/libreria.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-bottom">
+                    <div class="installa">
+                        <img src="img/download.svg" alt="">
+                    </div>
+                    <div class="profile">
+                        <img src="img/profile.svg" alt="" style="background-color: #808080; border-radius: 50%;">
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <main>
             <div class="upgrade">
                 <div class="btn">
                     <a href="#">EFFETUA L'UPGRADE</a>
                 </div>
             </div>
+            <div class="list-front">
+                <ul>
+                    <li>
+                        <a href="#">IN EVIDENZA</a>
+                    </li>
+                    <li>
+                        <a href="#">PODCAST</a>
+                    </li>
+                    <li>
+                        <a href="#">CLASSIFICHE</a>
+                    </li>
+                    <li>
+                        <a href="#">GENERI E MOOD</a>
+                    </li>
+                    <li>
+                        <a href="#">NUOVE USCITE</a>
+                    </li>
+                    <li>
+                        <a href="#">SCOPRI</a>
+                    </li>
+                </ul>
+            </div>
             <div class="front-box">
-                <div class="list-front">
-                    <ul>
-                        <li>
-                            <a href="#">IN EVIDENZA</a>
-                        </li>
-                        <li>
-                            <a href="#">PODCAST</a>
-                        </li>
-                        <li>
-                            <a href="#">CLASSIFICHE</a>
-                        </li>
-                        <li>
-                            <a href="#">GENERI E MOOD</a>
-                        </li>
-                        <li>
-                            <a href="#">NUOVE USCITE</a>
-                        </li>
-                        <li>
-                            <a href="#">SCOPRI</a>
-                        </li>
-                    </ul>
-                </div>
-
+                
                 <div class="box-cards">
-
-                    <div class="recently-played">
+                    
                         <div class="column">
                             <h2>
                                 Recently played
                             </h2>
                             <div id="cards">
-
+                
                                 <div class="card">
                                     <div class="card-img">
                                         <img src="img/metal_lifting.jpg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        Heavy Metal
-                                    </div>
-                                    <div class="card-artist">
-                                        Subtitle
+                                    <div class="text">
+                                        <div class="card-title">
+                                            Heavy Metal
+                                        </div>
+                                        <div class="card-artist">
+                                            Subtitle
+                                        </div>
                                     </div>
                                 </div>
-        
+                
                                 <div class="card">
                                     <div class="card-img">
                                         <img src="img/stranger.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        Stranger Things, Vol. 1 (a Netflix Original Soundtrack)
-                                    </div>
-                                    <div class="card-artist">
-                                        Kyle Dixon & Michael Stein
+                                    <div class="text">
+                                        <div class="card-title">
+                                            Stranger Things, Vol. 1 (a Netflix Original Soundtrack)
+                                        </div>
+                                        <div class="card-artist">
+                                            Kyle Dixon & Michael Stein
+                                        </div>
                                     </div>
                                 </div>
-        
+                
                                 <div class="card">
                                     <div class="card-img">
                                         <img src="img/aquietplace.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        A quiet place
-                                    </div>
-                                    <div class="card-artist">
-                                        Subtitle
+                                    <div class="text">
+                                        <div class="card-title">
+                                            A quiet place
+                                        </div>
+                                        <div class="card-artist">
+                                            Subtitle
+                                        </div>
                                     </div>
                                 </div>
-        
+                
                                 <div class="card">
                                     <div class="card-img">
                                         <img src="img/split.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        Split
-                                    </div>
-                                    <div class="card-artist">
-                                        Subtitle
+                                    <div class="text">
+                                        <div class="card-title">
+                                            Split
+                                        </div>
+                                        <div class="card-artist">
+                                            Subtitle
+                                        </div>
                                     </div>
                                 </div>
-        
+                
                                 <div class="card">
                                     <div class="card-img">
                                         <img src="img/cure.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        A cure for wellness
-
-                                    </div>
-                                    <div class="card-artist">
-                                        Subtitle
+                                    <div class="text">
+                                        <div class="card-title">
+                                            A cure for wellness
+                                        </div>
+                                        <div class="card-artist">
+                                            Subtitle
+                                        </div>
                                     </div>
                                 </div>
-        
+                
                                 <div class="card">
                                     <div class="card-img">
                                         <img src="img/sinister.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        Sinister
-                                    </div>
-                                    <div class="card-artist">
-                                        Subtitle
+                                    <div class="text">
+                                        <div class="card-title">
+                                            Sinister
+                                        </div>
+                                        <div class="card-artist">
+                                            Subtitle
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     
                     <div class="creato-per">
                         <div class="column">
@@ -170,8 +246,10 @@
                                     <div class="card-img">
                                         <img src="img/radar.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        Release Radar
+                                    <div class="text">
+                                        <div class="card-title">
+                                            Release Radar
+                                        </div>
                                     </div>
                                 </div>
         
@@ -179,8 +257,10 @@
                                     <div class="card-img">
                                         <img src="img/mixdaily.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        Daily Mix 1
+                                    <div class="text">
+                                        <div class="card-title">
+                                            Daily Mix 1
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -202,8 +282,10 @@
                                     <div class="card-img">
                                         <img src="img/youg.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        Lana del Rey
+                                    <div class="text">
+                                        <div class="card-title">
+                                            Lana del Rey
+                                        </div>
                                     </div>
                                 </div>
         
@@ -211,8 +293,10 @@
                                     <div class="card-img">
                                         <img src="img/einaudi.jpeg" alt="">
                                     </div>
-                                    <div class="card-title">
-                                        Ludovico Einaudi
+                                    <div class="text">
+                                        <div class="card-title">
+                                            Ludovico Einaudi
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -221,8 +305,8 @@
 
                 </div>
             </div>
-        </section>
-    </main>
+        </main>
+    </div>
 
     <footer>
         player
