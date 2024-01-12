@@ -4,24 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: sans-serif;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main {
-    display: flex;
-}
-
 .btn {
     width: fit-content;
-
+    
     padding: 10px 40px;
-
+    
     border: white 1px solid;
     border-radius: 20px;
 }
@@ -34,12 +21,24 @@ a {
     text-decoration: none;
 }
 
+body {
+    font-family: sans-serif;
+}
+
+
+
+main {
+    display: flex;
+
+    height: calc(100vh - 90px);
+}
 
 
 /* Navbar */
 
 nav {
     width: 230px;
+    height: 100%;
 
     background-color: black;
     color: white;
@@ -51,7 +50,9 @@ nav {
 /******* FRONT PAGE *******/
 
 #front {
-    flex-grow: 1;
+    width: calc(100% - 230px);
+
+    overflow-y: auto;
 
     color: white;
     background-color: #141922;
@@ -65,6 +66,7 @@ nav {
     height: 90px;
 
     position: fixed;
+    top: 0;
     right: 0;
 
     justify-content: flex-end;
@@ -85,7 +87,7 @@ nav {
 
 
 .front-box {
-    padding: 90px 20px;
+    padding: 90px 20px 0px;
 }
 
 
@@ -162,14 +164,11 @@ nav {
 /* Player */
 
 footer {
-    height: 90px;
     color: white;
     /* test */
+    height: 90px;
 
     width: 100%;
-
-    position: fixed;
-    bottom: 0;
 
     background-color: #282828;
 }
