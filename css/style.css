@@ -296,15 +296,130 @@ main {
 /* Player */
 
 footer {
+    display: flex;
+    align-items: center;
+
     height: 90px;
-    
-    /* width: 100%; */
-    
+   
     background-color: #282828;
     color: white;
 }
 
+.bottom-bar {
+    display: flex;
+    align-items: center;
+
+    width: calc(100% / 3);
+
+    padding: 10px;
+}
+
+.bottom-bar img {
+    width: 42px;
+}
+
+.bottom-bar.left {
+    gap: 40px;
+}
+
+.bottom-bar .playing {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+.bottom-bar.right {
+    justify-content: flex-end;
+}
+
+.playing-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.playing-artist {
+    font-size: 9px;
+}
+
+.bot-icon {
+    display: flex;
+    align-items: center;
+}
+
+.bot-icon.left {
+    gap: 13px;
+}
+
+.bot-icon.center {
+    gap: 21px;
+}
+
+.bot-icon.right {
+    gap: 17px;
+}
+
+.bottom-bar.center {
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+
+    gap: 27px;
+}
+
+/* .bottom-bar.center #player input {
+    width: 100%;
+    max-width: 430px;
+}
+
+.bottom-bar.center #player input::-webkit-slider-thumb {
+    box-shadow: -215px 0 0 210px #c1c1c1;
+} */
+
+.bottom-bar .player-bar {
+    height: 10px;
+    width: 100vw;
+    max-width: 430px;
+
+    border-radius: 25px;
+
+    background-color: #5a5a5a;
+}
 /* Fine player */
+
+
+/******************************
+    TEST
+********************************/
+
+input {
+    appearance: none;
+    width: 55%;
+    max-width: 120px;
+    border-radius: 25px;
+    background-color: #5a5a5a;
+    overflow: hidden;
+}
+
+input::-webkit-slider-thumb {
+    appearance: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    box-shadow: -100px 0 0 97px #c1c1c1;
+}
+
+/******************************
+    TEST
+********************************/
+
+
 
 
 
@@ -317,8 +432,6 @@ footer {
     #cards .card {
         width: calc(100% / 4 - 15px / 4 * 3);
     }
-
-
 }
 
 
@@ -358,7 +471,7 @@ footer {
     .sidebar-bottom {
         display: flex;
         flex-direction: column;
-        
+
 
         gap: 5px;
     }
@@ -376,6 +489,17 @@ footer {
 
     .upgrade {
         width: calc(100% - 50px);
+    }
+
+    .bottom-bar.left {
+        gap: 20px;
+    }
+    .bottom-bar img {
+        width: 28px;
+    }
+
+    .bot-icon.left {
+        flex-direction: column;
     }
 }
 
