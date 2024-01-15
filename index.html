@@ -19,37 +19,43 @@
     <div id="explorer">
 
         <aside>
-            <div id="large">
                 <div class="sidebar-top">
-                        <div>
-                            <img id="logo" src="img/logo.svg" alt="">
+                        <div id="logo">
+                            <img class="big" src="img/logo.svg" alt="Logo Spotify">
+                            <img class="small" src="img/logo-small.svg" alt="icon Spotify">
                         </div>
         
-                        <div class="tasti">
-                            <div>
-                                <img src="img/home.svg" alt="">
-                                Home
-                            </div>
+                        <ul id="main-links">
+                            <li>
+                                <a href="#">
+                                    <img src="img/home.svg" alt="">
+                                    <span>Home</span>
+                                </a>
+                            </li>
             
-                            <div>
-                                <img src="img/search.svg" alt=""> Cerca
-                            </div>
+                            <li>
+                                <a href="#">
+                                    <img src="img/search.svg" alt="">
+                                    <span>Cerca</span>
+                                </a>
+                            </li>
             
-                            <div>
-                                <img src="img/libreria.svg" alt="">
-                                La tua libreria
-                            </div>
-                        </div>
+                            <li>
+                                <a href="#">
+                                    <img src="img/libreria.svg" alt="">
+                                    <span>La tua libreria</span>
+                                </a>
+                            </li>
+                        </ul>
         
                         <div class="playlist">
-                            <div>
-                                <strong>PLAYLIST</strong>
-                            </div>
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-square-plus" style="font-size: 38px;"></i>
-                                    Crea Playlist
-                                </li>
+                            <h3>
+                                PLAYLIST
+                            </h3>
+                            <button>
+                                <i class="fa-solid fa-plus"></i> <span>Crea Playlist</span>
+                            </button>
+                            <ul id="playlist-list">
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
@@ -60,49 +66,20 @@
                             </ul>
                         </div>
                 </div>
+
                 <div class="sidebar-bottom">
-                        <div class="installa">
+                        <button class="installa">
                             <img src="img/download.svg" alt="">
-                            Installa app
-                        </div>
+                            <span>Installa app</span>
+                        </button>
+
                         <hr>
-                        <div class="profile">
+
+                        <button class="profile">
                             <img src="img/profile.svg" alt="" style="background-color: #808080; border-radius: 50%;">
-                            <strong>John Doe</strong>
-                        </div>
+                            <span>John Doe</span>
+                        </button>
                 </div>
-            </div>
-
-            <div id="mobile">
-                <div class="sidebar-top">
-                    <div>
-                        <img id="logo" src="img/logo-small.svg" alt="">
-                    </div>
-    
-                    <div class="tasti">
-                        <div>
-                            <img src="img/home.svg" alt="">
-                        </div>
-        
-                        <div>
-                            <img src="img/search.svg" alt="">
-                        </div>
-        
-                        <div>
-                            <img src="img/libreria.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sidebar-bottom">
-                    <div class="installa">
-                        <img src="img/download.svg" alt="">
-                    </div>
-                    <div class="profile">
-                        <img src="img/profile.svg" alt="" style="background-color: #808080; border-radius: 50%;">
-                    </div>
-                </div>
-            </div>
 
         </aside>
 
@@ -309,7 +286,34 @@
     </div>
 
     <footer>
-        player
+        <div id="bottom-bar"></div>
+        <div>
+            <div>
+                <div>img</div>
+                <div>testo</div>
+            </div>
+            <div>
+                icon
+            </div>
+        </div>
+
+        <div>
+            <div>
+                tasti player
+            </div>
+            <div>
+                barra player
+            </div>
+        </div>
+
+        <div>
+            <div>
+                icon
+            </div>
+            <div>
+                volume
+            </div>
+        </div>
     </footer>
 
 

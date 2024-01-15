@@ -37,10 +37,6 @@ body {
 
 /* Aside bar */
 
-aside #mobile{
-    display: none;
-}
-
 aside {
     display: flex;
     flex-direction: column;
@@ -48,14 +44,21 @@ aside {
     width: 230px;
     height: 100%;
 
-    padding: 20px 20px 7px;
+    padding: 20px 20px 10px;
 
+    font-weight: bold;
     background-color: black;
     color: white;
 }
 
-aside img {
-    width: 22px;
+aside button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+aside button span {
+    font-weight: bold;
 }
 
 .sidebar-top {
@@ -65,8 +68,60 @@ aside img {
     gap: 23px;
 }
 
-#logo {
-    width: 132px;
+#logo .big {
+    width: 135px;
+}
+
+#logo .small {
+    display: none;
+}
+
+#main-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    list-style-type: none;
+}
+
+#main-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: inherit;
+
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#main-links img {
+    height: 20px;
+}
+
+.playlist h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.playlist button {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    margin-bottom: 20px ;
+}
+
+.playlist button .fa-solid {
+    display: inline-block;
+
+    background-color: #a3a3a3;
+    color: black;
+
+    padding: 9px 10px 11px;
+
+    font-size: 17px;
 }
 
 /* playlist */
@@ -76,25 +131,41 @@ aside img {
 }
 /* fine playlist */
 
-.tasti div,
+#main-links a,
 .playlist li,
 .installa {
     opacity: 0.5;
 }
 
-.tasti div:hover,
+#main-links a:hover,
 .playlist li:hover,
 .installa:hover {
     opacity: 1;
 }
 
-.tasti div:hover {
-    border-left: greenyellow 1px solid;
+#main-links li:hover {
+    border-left: greenyellow 2px solid;
+}
+
+.sidebar-bottom button {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
 }
 
 hr {
     margin-block: 13px;
 }
+
+.sidebar-bottom .installa img {
+    height: 20px;
+}
+
+.sidebar-bottom .profile img {
+    width: 25px;
+}
+
 /* Fine aside bar */
 
 
